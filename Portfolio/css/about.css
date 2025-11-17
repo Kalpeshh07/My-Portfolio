@@ -1,0 +1,145 @@
+/* About Section Styles */
+.about {
+    padding: 100px 0;
+    background: var(--light-color);
+}
+
+.about .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    color: var(--dark-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: var(--dark-color);
+    transform: translateX(-50%);
+}
+
+.about .title::after {
+    content: "who i am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--primary-color);
+    padding: 5px;
+    background: var(--light-color);
+    transform: translateX(-50%);
+}
+
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.about .about-content .left img:hover {
+    transform: scale(1.05);
+}
+
+.about .about-content .right {
+    width: 55%;
+    padding-left: 40px;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+    color: var(--primary-color);
+}
+
+.about .about-content .right p {
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: var(--primary-color);
+    background: none;
+    transform: scale(1.05);
+}
+
+/* Animation classes */
+.animate-on-scroll {
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.animate-on-scroll.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left.animate-on-scroll {
+    transform: translateX(-100px);
+}
+
+.slide-in-right.animate-on-scroll {
+    transform: translateX(100px);
+}
+
+/* Responsive */
+@media (max-width: 1104px) {
+    .about .about-content .left img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .about .about-content .column {
+        width: 100%;
+    }
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right {
+        flex: 100%;
+        padding: 0;
+    }
+} 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Kalpesh Pawara Portfolio
 
 A modern, responsive personal portfolio website for Kalpesh Pawara, showcasing skills, projects, and contact information.
@@ -60,3 +61,6 @@ For any inquiries or suggestions, please contact:
 ---
 
 Created with ❤️ by Kalpesh Pawara 
+=======
+# My-Portfolio
+>>>>>>> ce8a62dd7553ab4dc25ad2a1fe2a6f245be9c4ef
